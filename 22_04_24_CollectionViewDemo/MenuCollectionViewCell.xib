@@ -16,10 +16,12 @@
                 <rect key="frame" x="0.0" y="0.0" width="116" height="106"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esu-eF-4Tn">
-                        <rect key="frame" x="20" y="65" width="76" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esu-eF-4Tn">
+                        <rect key="frame" x="10" y="60" width="96" height="30"/>
                         <color key="backgroundColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="pnh-z2-2O3"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -27,6 +29,11 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="esu-eF-4Tn" secondAttribute="trailing" constant="10" id="8aD-Jd-njJ"/>
+                <constraint firstItem="esu-eF-4Tn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="60" id="Ihi-pu-75q"/>
+                <constraint firstItem="esu-eF-4Tn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="pvh-Z8-eqt"/>
+            </constraints>
             <size key="customSize" width="116" height="106"/>
             <connections>
                 <outlet property="menuItemLabel" destination="esu-eF-4Tn" id="lJX-ql-LXE"/>
